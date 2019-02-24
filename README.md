@@ -4,7 +4,7 @@
 [![kaoscript](https://img.shields.io/badge/language-kaoscript-orange.svg)](https://github.com/kaoscript/kaoscript)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/@zokugun/lang.color.cie.svg?colorB=green)](https://www.npmjs.com/package/@zokugun/lang.color.cie)
-[![Dependency Status](https://badges.depfu.com/badges//overview.svg)](https://depfu.com/github/ZokugunKS/lang.color.cie)
+[![Dependency Status](https://badges.depfu.com/badges/d651a22b37a9214324d5f977b8ba1e53/overview.svg)](https://depfu.com/github/ZokugunKS/lang.color.cie)
 [![Build Status](https://travis-ci.org/ZokugunKS/lang.color.cie.svg?branch=master)](https://travis-ci.org/ZokugunKS/lang.color.cie)
 [![CircleCI](https://circleci.com/gh/ZokugunKS/lang.color.cie/tree/master.svg?style=shield)](https://circleci.com/gh/ZokugunKS/lang.color.cie/tree/master)
 [![Coverage Status](https://img.shields.io/coveralls/ZokugunKS/lang.color.cie/master.svg)](https://coveralls.io/github/ZokugunKS/lang.color.cie)

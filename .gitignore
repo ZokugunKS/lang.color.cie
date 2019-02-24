@@ -1,0 +1,8 @@
+node_modules
+*.ksb
+*.ksh
+*.ksm
+*.marks
+*.log
+coverage
+.coveralls.yml

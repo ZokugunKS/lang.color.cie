@@ -1,0 +1,64 @@
+{
+	"name": "@zokugun/lang.color.cie",
+	"description": "Add CIELAB, CIELUV, CIELCh, CIEXYZ, CIEYxy spaces to Color class",
+	"version": "0.3.0",
+	"since": "2014-05-15",
+	"author": {
+		"name": "Baptiste Augrain",
+		"email": "daiyam@zokugun.org"
+	},
+	"homepage": "https://github.com/zokugunks/lang.color.cie",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zokugunks/lang.color.cie"
+	},
+	"bugs": {
+		"url": "https://github.com/zokugunks/lang.color.cie/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"files": [
+		"src"
+	],
+	"main": "src/index.ks",
+	"dependencies": {
+		"@zokugun/lang": "github:zokugunks/lang",
+		"@zokugun/lang.color": "github:zokugunks/lang.color",
+		"@zokugun/lang.math.matrix": "github:zokugunks/lang.math.matrix"
+	},
+	"devDependencies": {
+		"@kaoscript/coverage-istanbul": "github:kaoscript/coverage-istanbul",
+		"@kaoscript/runtime": "github:kaoscript/runtime",
+		"@zokugun/istanbul.cover": "^0.5.0",
+		"@zokugun/istanbul.cover.cmd.mocha": "^0.4.0",
+		"@zokugun/istanbul.reporter.minimap": "^0.5.0",
+		"chai": "^4.2.0",
+		"coveralls": "^3.0.3",
+		"istanbul": "^0.4.5",
+		"kaoscript": "github:kaoscript/kaoscript",
+		"mocha": "^6.0.1"
+	},
+	"peerDependencies": {
+		"kaoscript": "^0.9.0"
+	},
+	"scripts": {
+		"push-coverage": "npm run test-coverage && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
+		"test": "npm run test-mocha",
+		"test-coverage": "node node_modules/@zokugun/istanbul.cover/src/cli.js",
+		"test-mocha": "mocha --colors --check-leaks --require kaoscript/register --reporter spec test/*.ks"
+	},
+	"keywords": [
+		"kaoscript",
+		"zokugun",
+		"color",
+		"cielab",
+		"cieluv",
+		"cielch",
+		"ciexyz",
+		"cieyxy"
+	]
+}

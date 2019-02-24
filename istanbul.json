@@ -1,0 +1,19 @@
+{
+	"reporting": {
+		"print": "summary",
+		"reports": [
+			"minimap:@zokugun/istanbul.reporter.minimap",
+			"lcovonly"
+		],
+		"watermarks": {
+			"statements":	[80, 90],
+			"lines":		[80, 90],
+			"functions":	[80, 90],
+			"branches":		[70, 80]
+		}
+	},
+	"cover": {
+		"cmd": "@zokugun/istanbul.cover.cmd.mocha",
+		"args": ["--check-leaks", "--require", "@kaoscript/coverage-istanbul/register", "--reporter", "spec", "test/*.ks"]
+	}
+}

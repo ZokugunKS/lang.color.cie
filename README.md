@@ -46,10 +46,10 @@ A color is defined in a color space. If you try to access it into another space,
 * `luma(Number)`: *Color*
 * `x()`: *Number*
 * `x(Number)`: *Color*
-* `y()`: *Number*
-* `y(Number)`: *Color*
-* `illuminant()`: *String* or *XYZ*
-* `illuminant(String|XYZ, String:method)`: *Color*
+* `z()`: *Number*
+* `z(Number)`: *Color*
+* `illuminant()`: *String* or *Array*
+* `illuminant(String|Array, String:method)`: *Color*
 * `observer()`: *Number*
 * `observer(Number, String:method)`: *Color*
 
@@ -333,9 +333,9 @@ Syntax
 ------
 
 ```
-var c = new Color('ciexyz(11.2933, 11.0002, 12.8373, D65)');
+const c = new Color('ciexyz(11.2933, 11.0002, 12.8373, D65)')
 
-expect(c.format('cielch(uv)')).to.equal('cielch(uv)(39.5808, 7.4685, 329.1097, D65, 2)');
+expect(c.format('cielch(uv)')).to.equal('cielch(uv)(39.5808, 7.4685, 329.1097, D65, 2)')
 ```
 
 ### CIEXYZ
@@ -344,7 +344,7 @@ ciexyz(x, luma|Y, z, illuminant?, observer?)
 
 luma: from 0 to 100, up to 4 decimal places
 x: from 0 to 127, up to 4 decimal places
-y: from 0 to 127, up to 4 decimal places
+z: from 0 to 127, up to 4 decimal places
 
 ciexyz(11.2933, 11.0002, 12.8373)
 ciexyz(11.2933, 11.0002, 12.8373, D65, 2)

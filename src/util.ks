@@ -174,8 +174,8 @@ const $caster = {
 func $adapt(x, y, z, oldIlluminant, newIlluminant, oldObserver, newObserver, method = 'bradford') { // {{{
 	method = method.replace(/s/g, '').toLowerCase()
 
-	if !$chromaticAdaptationMatrices[method] {
-		methdo = 'bradford'
+	if !?$chromaticAdaptationMatrices[method] {
+		method = 'bradford'
 	}
 
 	const oldName = (oldIlluminant is String ? oldIlluminant : oldIlluminant.join(',')) + '_' + oldObserver

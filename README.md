@@ -16,7 +16,7 @@ Getting Started
 
 With [node](http://nodejs.org) previously installed:
 
-	npm install zokugun.lang.color.cie
+	npm install @zokugun/lang.color.cie
 
 Use it with `JavaScript`:
 

@@ -120,13 +120,13 @@ const $degree2rad = Math.PI / 180
 
 const $caster = {
 	alpha(n?, percentage = null) { // {{{
-		n = parseFloat(n)
+		const value = parseFloat(n)
 
-		if n == NaN {
+		if value == NaN {
 			return 1
 		}
 
-		return (?percentage ? n / 100 : n).limit(0, 1).round(3)
+		return (?percentage ? value / 100 : value).limit(0, 1).round(3)
 	} // }}}
 	ff(n) => parseFloat(n).limit(0, 255).round()
 	float(n, m) => parseFloat(n).limit(0, m).round(4)

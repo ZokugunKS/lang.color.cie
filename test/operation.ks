@@ -1,4 +1,5 @@
 #![bin]
+#![error(off)]
 
 extern {
 	describe:	func

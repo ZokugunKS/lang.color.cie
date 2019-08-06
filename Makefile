@@ -13,6 +13,6 @@ else
 endif
 
 clean:
-	find -L . -type f \( -name "*.ksb" -o -name "*.ksh" -o -name "*.ksm" \) -exec rm {} \;
+	npx kaoscript --clean
 
 .PHONY: test coverage

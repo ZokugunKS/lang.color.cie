@@ -200,7 +200,7 @@ func $adapt(x, y, z, oldIlluminant, newIlluminant, oldObserver, newObserver, met
 			[0, 0, dstDomain[2] / srcDomain[2]]
 		]
 
-		m = Matrix.multiply(Matrix.multiply(ma, domainCenter), $inversedChromaticAdaptationMatrices[method])
+		m = Matrix.multiply(Matrix.multiply(ma, domainCenter) as Array, $inversedChromaticAdaptationMatrices[method])
 
 		if !$adaptationMatrices[method] {
 			$adaptationMatrices[method] = {}

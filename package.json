@@ -23,24 +23,24 @@
 		}
 	],
 	"files": [
-		"src"
+		"src/**/*.ks"
 	],
 	"main": "src/index.ks",
 	"dependencies": {
-		"@zokugun/lang": "github:zokugunks/lang",
-		"@zokugun/lang.color": "github:zokugunks/lang.color",
-		"@zokugun/lang.math.matrix": "github:zokugunks/lang.math.matrix"
+		"@zokugun/lang": "^0.4.0",
+		"@zokugun/lang.color": "^0.3.0",
+		"@zokugun/lang.math.matrix": "^0.3.0"
 	},
 	"devDependencies": {
-		"@kaoscript/coverage-istanbul": "github:kaoscript/coverage-istanbul",
-		"@kaoscript/runtime": "github:kaoscript/runtime",
+		"@kaoscript/coverage-istanbul": "^0.2.1",
+		"@kaoscript/runtime": "^0.6.1",
 		"@zokugun/istanbul.cover": "^0.5.0",
 		"@zokugun/istanbul.cover.cmd.mocha": "^0.4.0",
 		"@zokugun/istanbul.reporter.minimap": "^0.5.0",
 		"chai": "^4.2.0",
-		"coveralls": "^3.0.5",
+		"coveralls": "^3.0.6",
 		"istanbul": "^0.4.5",
-		"kaoscript": "github:kaoscript/kaoscript",
+		"kaoscript": "^0.9.1",
 		"mocha": "^5.2.0"
 	},
 	"peerDependencies": {
